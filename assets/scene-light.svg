@@ -54,6 +54,21 @@
     <filter id="fxNameGlow" x="-40%" y="-70%" width="180%" height="240%" color-interpolation-filters="sRGB">
         <feDropShadow dx="0" dy="0" stdDeviation="14" flood-color="#7C3AED" flood-opacity="0.28"/>
       </filter>
+    <linearGradient id="termBodyGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2A1B49"/>
+        <stop offset="1" stop-color="#6D4FB0"/>
+      </linearGradient>
+    <linearGradient id="termActiveGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#0EA5C4"/>
+        <stop offset="0.55" stop-color="#7C3AED"/>
+        <stop offset="1" stop-color="#0EA5C4"/>
+      </linearGradient>
+    <filter id="fxTermGlow" x="-15%" y="-60%" width="130%" height="220%" color-interpolation-filters="sRGB">
+        <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#7C3AED" flood-opacity="0.18"/>
+      </filter>
+    <filter id="fxTermGlowActive" x="-15%" y="-60%" width="130%" height="220%" color-interpolation-filters="sRGB">
+        <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#0EA5C4" flood-opacity="0.22"/>
+      </filter>
     <style>
 @font-face {
   font-family: 'JetBrains Mono';
@@ -196,6 +211,8 @@
 .term-label { font-family: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace; font-weight: 600; font-size: 13px; letter-spacing: 1px; fill: #5C4C80; opacity: 0.7; }
 .project-name { font-family: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace; font-weight: 700; font-size: 18px; letter-spacing: 0.3px; fill: #1B1330; }
 .profile-panel rect:first-child { stroke: #7C3AED; }
+.typing-line { font-weight: 600; letter-spacing: 0.3px; fill: url(#termBodyGrad); filter: url(#fxTermGlow); }
+.active-line { fill: url(#termActiveGrad); filter: url(#fxTermGlowActive); }
 
     </style>
   </defs>
