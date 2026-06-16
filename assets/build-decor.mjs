@@ -7,6 +7,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 const b64 = (p) => readFileSync(new URL(p, import.meta.url)).toString('base64');
 const LAT = b64('./fonts/pixelify-latin.woff2');
 const LATEXT = b64('./fonts/pixelify-latin-ext.woff2');
+const JBM = b64('./fonts/jetbrains-mono.woff2');
 
 const C = {
   rose: '#E48BAE',
@@ -62,34 +63,64 @@ const tagline = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${TW} ${TH
   ${slides}
 </svg>
 `;
-writeFileSync(new URL('./tagline.svg', import.meta.url), tagline);
+writeFileSync(new URL('./stack.svg', import.meta.url), tagline);
 
-// ─────────────────────────── about.svg (soft pink lines) ──────────────────
-const aboutLines = [
-  'devops engineer · dba — 3 yrs of commercial experience',
-  '21 y.o, in IT since 2021',
-  'high-load postgres · time-series telemetry · k8s internals',
-  'nights: brewing peregrine — zero-trust network access, in go',
+// ─────────────────────────── about-card.svg (code window) ─────────────────
+// macOS-style code editor screenshot: traffic lights + syntax-highlit Go.
+const SYN = {
+  kw: '#D6608F',   // package / type / struct
+  typ: '#C77DCE',  // struct name
+  fld: '#A8728F',  // field names
+  bt: '#CB7DA0',   // builtin types
+  str: '#E48BAE',  // strings
+  cm: '#C7A6B8',   // comments
+  pn: '#BBA0AE',   // punctuation
+  win: '#FFF7F3',  // window body
+  bar: '#FCE7EE',  // title bar
+  edge: '#FBD9E6', // border
+  fname: '#C28BA6',
+};
+// each code line = array of [text, color]; spaces preserved for alignment
+const code = [
+  [['package ', SYN.kw], ['main', SYN.str]],
+  [],
+  [['type ', SYN.kw], ['anxietypncfxr ', SYN.typ], ['struct ', SYN.kw], ['{', SYN.pn]],
+  [['    Role     ', SYN.fld], ['string   ', SYN.bt], ['// devops · dba', SYN.cm]],
+  [['    Exp      ', SYN.fld], ['string   ', SYN.bt], ['// 3 yrs commercial', SYN.cm]],
+  [['    Since    ', SYN.fld], ['int      ', SYN.bt], ['// in IT since 2021', SYN.cm]],
+  [['    Age      ', SYN.fld], ['int      ', SYN.bt], ['// 21 y.o', SYN.cm]],
+  [['    Focus    ', SYN.fld], ['[]string ', SYN.bt], ['// postgres · telemetry · k8s', SYN.cm]],
+  [['    Brewing  ', SYN.fld], ['string   ', SYN.bt], ['// peregrine · zero-trust · go', SYN.cm]],
+  [['}', SYN.pn]],
 ];
-const AW = 880, ALH = 40, ATOP = 46;
-const AH = ATOP + (aboutLines.length - 1) * ALH + 18;
-const aLines = aboutLines.map((ln, i) =>
-  `<text class="fl" style="--dl:${(0.15 + i * 0.12).toFixed(2)}s" x="${AW / 2}" y="${ATOP + i * ALH}" text-anchor="middle" font-size="24" font-weight="600" fill="${C.rose}"><tspan fill="${C.bullet}">· </tspan>${ln}</text>`
-).join('\n  ');
+const CW = 720, BAR = 40, PADX = 26, LH = 27, TOP = BAR + 34, FSZ = 19;
+const CH = TOP + (code.length - 1) * LH + 26;
+const codeLines = code.map((toks, i) => {
+  if (toks.length === 0) return '';
+  const spans = toks.map(([t, c]) => `<tspan fill="${c}">${t}</tspan>`).join('');
+  return `<text class="cl" style="--dl:${(0.1 + i * 0.05).toFixed(2)}s" x="${PADX}" y="${TOP + i * LH}" xml:space="preserve">${spans}</text>`;
+}).join('\n    ');
 
-const about = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${AW} ${AH}" width="${AW}" height="${AH}" font-family="'Pixelify Sans', monospace">
+const aboutCard = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${CW} ${CH}" width="${CW}" height="${CH}" font-family="'JetBrains Mono', ui-monospace, monospace">
   <defs>
     <style>
-      ${FACE}
-      text{shape-rendering:crispEdges}
-      .fl{opacity:0;animation:fade .8s ease-out var(--dl,0s) forwards}
-      @keyframes fade{to{opacity:1}}
+      @font-face{font-family:'JetBrains Mono';font-weight:400 700;src:url(data:font/woff2;base64,${JBM}) format('woff2');}
+      text{font-size:${FSZ}px;font-weight:500}
+      .cl{opacity:0;animation:rise .5s ease-out var(--dl,0s) both}
+      @keyframes rise{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
     </style>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#E9B7CC" flood-opacity="0.45"/></filter>
   </defs>
-  ${aLines}
+  <rect x="6" y="4" width="${CW - 12}" height="${CH - 12}" rx="14" fill="${SYN.win}" stroke="${SYN.edge}" stroke-width="1.5" filter="url(#sh)"/>
+  <path d="M6 18 a12 12 0 0 1 12-12 h${CW - 36} a12 12 0 0 1 12 12 v${BAR - 18} h-${CW - 12} z" fill="${SYN.bar}"/>
+  <circle cx="28" cy="24" r="6" fill="#F7A6A6"/>
+  <circle cx="50" cy="24" r="6" fill="#F9D29A"/>
+  <circle cx="72" cy="24" r="6" fill="#A9E0AC"/>
+  <text x="${CW / 2}" y="29" text-anchor="middle" font-size="15" fill="${SYN.fname}">about.go</text>
+  ${codeLines}
 </svg>
 `;
-writeFileSync(new URL('./about.svg', import.meta.url), about);
+writeFileSync(new URL('./about-card.svg', import.meta.url), aboutCard);
 
 // ─────────────────────────── divider.svg ──────────────────────────────────
 function heart(x, y, p, fill, dur, delay) {
@@ -126,4 +157,4 @@ const divider = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${DW} ${DH
 `;
 writeFileSync(new URL('./divider.svg', import.meta.url), divider);
 
-console.log(`tagline ${(tagline.length / 1024).toFixed(1)}KB · about ${(about.length / 1024).toFixed(1)}KB · divider ${(divider.length / 1024).toFixed(1)}KB`);
+console.log(`stack ${(tagline.length / 1024).toFixed(1)}KB · about-card ${(aboutCard.length / 1024).toFixed(1)}KB · divider ${(divider.length / 1024).toFixed(1)}KB`);

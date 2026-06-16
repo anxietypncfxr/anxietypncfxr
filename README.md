@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/tagline.svg" width="440" alt="kubernetes · go · python · bash · docker">
+  <img src="./assets/stack.svg" width="440" alt="kubernetes · go · python · bash · docker">
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 <h3 align="center">⠀ ੈ♡ about</h3>
 
 <p align="center">
-  <img src="./assets/about.svg" width="660" alt="devops engineer · dba — 3 yrs of commercial experience · 21 y.o, in IT since 2021 · high-load postgres · time-series telemetry · k8s internals · nights: brewing peregrine — zero-trust network access, in go">
+  <img src="./assets/about-card.svg" width="600" alt="about.go — devops engineer · dba, 3 yrs commercial, in IT since 2021, 21 y.o, focus: postgres · telemetry · k8s, brewing peregrine — zero-trust, in go">
 </p>
 
 <p align="center">
@@ -65,10 +65,6 @@
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=anxietypncfxr&hide_border=true&background=FFF7F3&stroke=FFD9E6&ring=E48BAE&fire=F4A6C0&currStreakLabel=E48BAE&sideLabels=B0859A&dates=C9A3B6&currStreakNum=B0859A&sideNums=B0859A" alt="streak">
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=anxietypncfxr&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6&title_color=E48BAE&text_color=B0859A" alt="trophies">
 </p>
 
 <p align="center">
