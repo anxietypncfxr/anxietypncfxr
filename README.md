@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/tagline.svg" width="420" alt="tagline">
+  <img src="./assets/tagline.svg" width="440" alt="kubernetes · go · python · bash · docker">
 </p>
 
 <p align="center">
@@ -20,12 +20,9 @@
 
 <h3 align="center">⠀ ੈ♡ about</h3>
 
-```text
-✿ devops engineer · dba — 3 yrs of commercial experience
-✿ 21 y.o, in IT since 2021
-✿ high-load postgres · time-series telemetry · k8s internals
-✿ nights: brewing peregrine — zero-trust network access, in go
-```
+<p align="center">
+  <img src="./assets/about.svg" width="660" alt="devops engineer · dba — 3 yrs of commercial experience · 21 y.o, in IT since 2021 · high-load postgres · time-series telemetry · k8s internals · nights: brewing peregrine — zero-trust network access, in go">
+</p>
 
 <p align="center">
   <img src="./assets/divider.svg" width="380" alt="">
