@@ -15,10 +15,10 @@
 ### ⠀ ੈ♡ about
 
 ```text
-~ devops engineer · dba · go developer
-~ 21 y.o, in IT since 2021
-~ days: tuning postgres, taming kubernetes, shipping go
-~ nights: brewing peregrine — zero-trust network access, in go
+✿ devops engineer · dba — 3 yrs of commercial experience
+✿ 21 y.o, in IT since 2021
+✿ high-load postgres · time-series telemetry · k8s internals
+✿ nights: brewing peregrine — zero-trust network access, in go
 ```
 
 <br/>
@@ -64,7 +64,7 @@
 
 ### ⠀ ੈ♡ reach me
 
-<p>
+<p align="center">
   <a href="https://t.me/anxietypncfxr">
     <img src="https://img.shields.io/badge/@anxietypncfxr-EEA9C5?style=for-the-badge&logo=telegram&logoColor=fff&labelColor=EEA9C5" alt="telegram">
   </a>
