@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg" width="100%" alt="anxietypncfxr">
+  <img src="./assets/banner.svg" width="100%" alt="gothblessme">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 <h3 align="center">⠀ ੈ♡ about</h3>
 
 <p align="center">
-  <img src="./assets/about-card.svg" width="600" alt="about.go — devops engineer · dba, 3 yrs commercial, in IT since 2021, 21 y.o, focus: postgres · telemetry · k8s, brewing peregrine — zero-trust, in go">
+  <img src="./assets/about-card.svg" width="600" alt="about.go — devops · dba · golang developer, 3 yrs commercial, in IT since 2021, 21 y.o, focus: MLOps · fullstack · system architecture">
 </p>
 
 <p align="center">
@@ -41,6 +41,12 @@
   <img src="https://img.shields.io/badge/Ansible-F4B7CE?style=for-the-badge&logo=ansible&logoColor=fff&labelColor=F4B7CE" alt="Ansible">
   <img src="https://img.shields.io/badge/ArgoCD-F4B7CE?style=for-the-badge&logo=argo&logoColor=fff&labelColor=F4B7CE" alt="ArgoCD">
   <img src="https://img.shields.io/badge/Linux-F4B7CE?style=for-the-badge&logo=linux&logoColor=fff&labelColor=F4B7CE" alt="Linux">
+</p>
+
+<p align="center"><img src="https://img.shields.io/badge/ci%20%2F%20cd-C77D9E?style=flat-square&labelColor=C77D9E" alt="ci / cd"></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/GitHub_Actions-F2B3CC?style=for-the-badge&logo=githubactions&logoColor=fff&labelColor=F2B3CC" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/GitLab_CI-F2B3CC?style=for-the-badge&logo=gitlab&logoColor=fff&labelColor=F2B3CC" alt="GitLab CI">
 </p>
 
 <p align="center"><img src="https://img.shields.io/badge/databases-C77D9E?style=flat-square&labelColor=C77D9E" alt="databases"></p>
@@ -88,12 +94,12 @@
 <h3 align="center">⠀ ੈ♡ stats</h3>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=anxietypncfxr&show_icons=true&hide_border=true&title_color=E48BAE&icon_color=F4A6C0&text_color=B0859A&bg_color=FFF7F3" alt="stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=anxietypncfxr&layout=compact&hide_border=true&title_color=E48BAE&text_color=B0859A&bg_color=FFF7F3" alt="top languages">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=gothblessme&show_icons=true&hide_border=true&title_color=E48BAE&icon_color=F4A6C0&text_color=B0859A&bg_color=FFF7F3" alt="stats">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=gothblessme&layout=compact&hide_border=true&title_color=E48BAE&text_color=B0859A&bg_color=FFF7F3" alt="top languages">
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=anxietypncfxr&hide_border=true&background=FFF7F3&stroke=FFD9E6&ring=E48BAE&fire=F4A6C0&currStreakLabel=E48BAE&sideLabels=B0859A&dates=C9A3B6&currStreakNum=B0859A&sideNums=B0859A" alt="streak">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gothblessme&hide_border=true&background=FFF7F3&stroke=FFD9E6&ring=E48BAE&fire=F4A6C0&currStreakLabel=E48BAE&sideLabels=B0859A&dates=C9A3B6&currStreakNum=B0859A&sideNums=B0859A" alt="streak">
 </p>
 
 <p align="center">
@@ -103,15 +109,15 @@
 <h3 align="center">⠀ ੈ♡ reach me</h3>
 
 <p align="center">
-  <a href="https://t.me/anxietypncfxr">
-    <img src="https://img.shields.io/badge/@anxietypncfxr-F0BBD0?style=for-the-badge&logo=telegram&logoColor=fff&labelColor=EEA9C5" alt="telegram">
+  <a href="https://t.me/maryjaneh8u">
+    <img src="https://img.shields.io/badge/@maryjaneh8u-F0BBD0?style=for-the-badge&logo=telegram&logoColor=fff&labelColor=EEA9C5" alt="telegram">
   </a>
 </p>
 
 <br/>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=anxietypncfxr&color=F4B7CE&style=flat-square&label=visitors" alt="visitors">
+  <img src="https://komarev.com/ghpvc/?username=gothblessme&color=F4B7CE&style=flat-square&label=visitors" alt="visitors">
 </p>
 
 <p align="center">

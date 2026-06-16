@@ -102,8 +102,8 @@
 
     <g class="float">
       <g class="fade d1">
-        <text x="604" y="194" text-anchor="middle" font-size="88" font-weight="700" fill="#F6CFDE">anxietypncfxr</text>
-        <text x="600" y="190" text-anchor="middle" font-size="88" font-weight="700" fill="#E48BAE">anxietypncfxr</text>
+        <text x="604" y="194" text-anchor="middle" font-size="88" font-weight="700" fill="#F6CFDE">gothblessme</text>
+        <text x="600" y="190" text-anchor="middle" font-size="88" font-weight="700" fill="#E48BAE">gothblessme</text>
       </g>
     </g>
 
@@ -111,7 +111,7 @@
 
     <text class="fade d3" x="600" y="262" text-anchor="middle" font-size="29" font-weight="600" fill="#C98BA6">DevOps · DBA · Go Developer</text>
 
-    <text class="fade d4" x="600" y="312" text-anchor="middle" font-size="22" fill="#D3A6BB">21 y.o · in IT since 2021 · brewing peregrine<tspan class="cursor" fill="#FF9BBE">~</tspan></text>
+    <text class="fade d4" x="600" y="312" text-anchor="middle" font-size="22" fill="#D3A6BB">21 y.o · in IT since 2021<tspan class="cursor" fill="#FF9BBE"> _</tspan></text>
   </g>
 
   <rect x="1.5" y="1.5" width="1197" height="397" rx="28" fill="none" stroke="#FFD9E6" stroke-width="3"/>

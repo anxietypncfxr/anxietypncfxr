@@ -117,8 +117,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
 
     <g class="float">
       <g class="fade d1">
-        <text x="${W / 2 + 4}" y="194" text-anchor="middle" font-size="88" font-weight="700" fill="${C.roseSoft}">anxietypncfxr</text>
-        <text x="${W / 2}" y="190" text-anchor="middle" font-size="88" font-weight="700" fill="${C.rose}">anxietypncfxr</text>
+        <text x="${W / 2 + 4}" y="194" text-anchor="middle" font-size="88" font-weight="700" fill="${C.roseSoft}">gothblessme</text>
+        <text x="${W / 2}" y="190" text-anchor="middle" font-size="88" font-weight="700" fill="${C.rose}">gothblessme</text>
       </g>
     </g>
 
@@ -126,7 +126,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
 
     <text class="fade d3" x="${W / 2}" y="262" text-anchor="middle" font-size="29" font-weight="600" fill="${C.sub}">DevOps · DBA · Go Developer</text>
 
-    <text class="fade d4" x="${W / 2}" y="312" text-anchor="middle" font-size="22" fill="${C.tag}">21 y.o · in IT since 2021 · brewing peregrine<tspan class="cursor" fill="${C.pinkHi}">~</tspan></text>
+    <text class="fade d4" x="${W / 2}" y="312" text-anchor="middle" font-size="22" fill="${C.tag}">21 y.o · in IT since 2021<tspan class="cursor" fill="${C.pinkHi}"> _</tspan></text>
   </g>
 
   <rect x="1.5" y="1.5" width="${W - 3}" height="${H - 3}" rx="28" fill="none" stroke="${C.border}" stroke-width="3"/>

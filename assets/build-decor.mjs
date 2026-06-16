@@ -91,16 +91,15 @@ const SYN = {
 const code = [
   [['package ', SYN.kw], ['main', SYN.str]],
   [],
-  [['type ', SYN.kw], ['anxietypncfxr ', SYN.typ], ['struct ', SYN.kw], ['{', SYN.pn]],
-  [['    Role     ', SYN.fld], ['string   ', SYN.bt], ['// devops · dba', SYN.cm]],
+  [['type ', SYN.kw], ['gothblessme ', SYN.typ], ['struct ', SYN.kw], ['{', SYN.pn]],
+  [['    Role     ', SYN.fld], ['string   ', SYN.bt], ['// devops · dba · golang developer', SYN.cm]],
   [['    Exp      ', SYN.fld], ['string   ', SYN.bt], ['// 3 yrs commercial', SYN.cm]],
   [['    Since    ', SYN.fld], ['int      ', SYN.bt], ['// in IT since 2021', SYN.cm]],
   [['    Age      ', SYN.fld], ['int      ', SYN.bt], ['// 21 y.o', SYN.cm]],
-  [['    Focus    ', SYN.fld], ['[]string ', SYN.bt], ['// k8s · golang · ansible', SYN.cm]],
-  [['    Brewing  ', SYN.fld], ['string   ', SYN.bt], ['// peregrine · zero-trust · go', SYN.cm]],
+  [['    Focus    ', SYN.fld], ['[]string ', SYN.bt], ['// MLOps · fullstack · system architecture', SYN.cm]],
   [['}', SYN.pn]],
 ];
-const CW = 720, BAR = 40, PADX = 26, LH = 27, TOP = BAR + 34, FSZ = 19;
+const CW = 840, BAR = 40, PADX = 26, LH = 27, TOP = BAR + 34, FSZ = 19;
 const CH = TOP + (code.length - 1) * LH + 26;
 const codeLines = code.map((toks, i) => {
   if (toks.length === 0) return '';
