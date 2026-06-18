@@ -99,7 +99,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gothblessme&hide_border=true&background=FFF7F3&stroke=FFD9E6&ring=E48BAE&fire=F4A6C0&currStreakLabel=E48BAE&sideLabels=B0859A&dates=C9A3B6&currStreakNum=B0859A&sideNums=B0859A" alt="streak">
+  <img src="https://streak-stats.demolab.com/?user=gothblessme&hide_border=true&background=FFF7F3&stroke=FFD9E6&ring=E48BAE&fire=F4A6C0&currStreakLabel=E48BAE&sideLabels=B0859A&dates=C9A3B6&currStreakNum=B0859A&sideNums=B0859A" alt="streak">
 </p>
 
 <p align="center">
