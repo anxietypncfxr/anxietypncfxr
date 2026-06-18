@@ -94,12 +94,12 @@
 <h3 align="center">⠀ ੈ♡ stats</h3>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=gothblessme&show_icons=true&hide_border=true&title_color=E48BAE&icon_color=F4A6C0&text_color=B0859A&bg_color=FFF7F3" alt="stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=gothblessme&layout=compact&hide_border=true&title_color=E48BAE&text_color=B0859A&bg_color=FFF7F3" alt="top languages">
+  <img height="165" src="./assets/stats.svg" alt="stats">
+  <img height="165" src="./assets/top-langs.svg" alt="top languages">
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=gothblessme&hide_border=true&background=FFF7F3&stroke=FFD9E6&ring=E48BAE&fire=F4A6C0&currStreakLabel=E48BAE&sideLabels=B0859A&dates=C9A3B6&currStreakNum=B0859A&sideNums=B0859A" alt="streak">
+  <img src="./assets/streak.svg" alt="streak">
 </p>
 
 <p align="center">

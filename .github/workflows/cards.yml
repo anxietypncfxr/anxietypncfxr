@@ -1,0 +1,46 @@
+name: cards
+
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cards
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: render cards
+        env:
+          USER: gothblessme
+        run: |
+          mkdir -p assets
+          fetch() {
+            curl -sSL --retry 4 --retry-delay 12 --retry-all-errors --max-time 120 "$1" -o "$2.tmp" \
+              && grep -q '</svg>' "$2.tmp" \
+              && mv "$2.tmp" "$2" && echo "ok $2" \
+              || { echo "fail $2"; rm -f "$2.tmp"; exit 1; }
+          }
+          fetch "https://streak-stats.demolab.com/?user=$USER&hide_border=true&background=FFF7F3&stroke=FFD9E6&ring=E48BAE&fire=F4A6C0&currStreakLabel=E48BAE&sideLabels=B0859A&dates=C9A3B6&currStreakNum=B0859A&sideNums=B0859A" assets/streak.svg
+          fetch "https://github-readme-stats.vercel.app/api?username=$USER&show_icons=true&hide_border=true&title_color=E48BAE&icon_color=F4A6C0&text_color=B0859A&bg_color=FFF7F3" assets/stats.svg
+          fetch "https://github-readme-stats.vercel.app/api/top-langs?username=$USER&layout=compact&hide_border=true&title_color=E48BAE&text_color=B0859A&bg_color=FFF7F3" assets/top-langs.svg
+
+      - name: commit if changed
+        run: |
+          git config user.name "gothblessme"
+          git config user.email "117044276+gothblessme@users.noreply.github.com"
+          git add assets/streak.svg assets/stats.svg assets/top-langs.svg
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "refresh stat cards"
+            git push
+          fi
